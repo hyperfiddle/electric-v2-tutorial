@@ -42,6 +42,7 @@
             wip.demo-custom-types
             wip.tracing
             user.demo-reagent-interop ; yarn
+            user.demo-uix-interop ;yarn
             wip.demo-stage-ui4 ; yarn
             wip.js-interop))
 
@@ -61,6 +62,7 @@
    `user.demo-webview/Webview user.demo-webview/Webview
    `user.demo-todos-simple/TodoList user.demo-todos-simple/TodoList
    `user.demo-reagent-interop/ReagentInterop user.demo-reagent-interop/ReagentInterop
+   `user.demo-uix-interop/UixInterop user.demo-uix-interop/UixInterop
    ;; `wip.demo-stage-ui4/CrudForm wip.demo-stage-ui4/CrudForm
    `user.demo-svg/SVG user.demo-svg/SVG
    ; -- `wip.tracing/TracingDemo wip.tracing/TracingDemo
@@ -168,7 +170,9 @@
      {::id `user.demo-todos-simple/TodoList 
       ::lead "minimal todo list. it's multiplayer, try two tabs"} 
      {::id `user.demo-reagent-interop/ReagentInterop
-      ::lead "Reagent (React.js) embedded inside Electric. The reactive mouse coordinates cross from Electric to Reagent via props."}
+      ::lead "Reagent (React.js wrapper) embedded inside Electric. The reactive mouse coordinates cross from Electric to Reagent via props."}
+     {::id `user.demo-uix-interop/UixInterop
+      ::lead "Uix (modern React.js wrapper) embedded inside Electric. The reactive mouse coordinates cross from Electric to Reagent via props."}
      {::id `user.demo-svg/SVG
       ::lead "SVG support. Note the animation is reactive and driven by javascript cosine."}
 
